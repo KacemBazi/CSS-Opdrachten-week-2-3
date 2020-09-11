@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display en Pisitioningt</title>
+    
+    <style>
+      .div {
+        background-image: url(keith\ haring.JPEG);
+        position: relative;
+        width: 400px;
+        height: 300px;
+        background-size: cover;
+      }
+
+      .divbox {
+        position: relative;
+        width: 400px;
+        height: 300px;
+      }
+
+      .div-text {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        z-index: 2;
+      }
+
+      .divbox img {
+        position: absolute;
+        top: 0px;
+        height: 300px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 5</h1>
+    <hr />
+    <div class="div">
+      <h1>&lt;h1&gt;Dit is een titel&lt;/h1&gt;</h1>
+      <p>&lt;p&gt;Dit is een paragraaf.&lt;/p&gt;</p>
+      <p>&lt;p&gt;Dit is nog een paragraaf.&lt;/p&gt;</p>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <h1>Z-index</h1>
+    <div class="divbox">
+      <div class="div-text">
+        <h1>&lt;h1&gt;Dit is een titel&lt;/h1&gt;</h1>
+        <p>&lt;p&gt;Dit is een paragraaf.&lt;/p&gt;</p>
+        <p>&lt;p&gt;Dit is nog een paragraaf.&lt;/p&gt;</p>
+      </div>
+      <img src="keith haring.JPEG" />
+    </div>
+  </body>
+</html>

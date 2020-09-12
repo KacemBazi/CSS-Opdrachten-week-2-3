@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo elements</title>
+    <style>
+      li::before {
+        content: "BEFORE";
+        font-weight: 100;
+        height: 100;
+        background-color: blue;
+      }
+      li::after {
+        content: "AFTER";
+        font-weight: 100;
+        height: 100;
+        background-color: red;
+      }
+
+      OL::first-line {
+        content: "FIRST-LINE";
+        font-weight: 100;
+        height: 100;
+        background-color: green;
+      }
+
+      div:first-child {
+        content: "FIRST-LINE";
+        font-weight: 100;
+        height: 100;
+        background-color: yellow;
+      }
+
+      .before {
+        color: blue;
+      }
+      .after {
+        color: red;
+      }
+      .first-line {
+        color: green;
+      }
+      .first-child {
+        color: yellow;
+      }
+
+      .div {
+        background-color: black;
+        block-size: 0px;
+        width: 100px;
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Opdracht 3</h1>
+      <p>
+        Er zijn aldus 14 verschillende pseudo elementen. Je hebt ze in de
+        voorgaande opdracht reeds opgezocht en uitgezocht wat ze doen. Kun je
+        van al deze pseudo-elementen een voorbeeld maken?
+      </p>
+      <ol>
+        <li>
+          Before: dit doe je in je css, en zorgt er voor dat je voor de content
+          buiten de div iets kunt toevoegen.
+        </li>
+        <li>
+          After: dit doe je in je css, en zorgt er voor dat je na de content
+          buiten de div iets kunt toevoegen.
+        </li>
+        <div1>
+          <li>
+            first-line: dit doe je in je css, en zorgt er voor dat je de eerste
+            line in je div beinvloed. En dit kun je toepassen op meerdere div's.
+          </li>
+        </div1>
+        <li>
+          first-child: dit doe je in je css, en zorgt er voor dat je de eerste
+          div of de eerste pragraphs in je div's beinvloed.
+        </li>
+      </ol>
+      <br />
+    </div>
+    <div class="div">
+      <p class="before">Before</p>
+      <p class="after">After</p>
+      <p class="first-line">first-line</p>
+      <p class="first-child">first-child</p>
+    </div>
+  </body>
+</html>

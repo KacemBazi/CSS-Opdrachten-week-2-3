@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo elements</title>
+    <style>
+      div {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: 100px;
+        background-color: red;
+        transform: rotate(15deg);
+      }
+      div::before {
+        position: absolute;
+        content: "";
+        transform: rotate(40deg);
+        height: 200px;
+        width: 200px;
+        background-color: red;
+      }
+      div::after {
+        position: absolute;
+        content: "";
+        transform: rotate(60deg);
+        height: 200px;
+        width: 200px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 7</h1>
+    <p>
+      De laatste opdracht vergt wat creativiteit. Zie het onderstaande voorbeeld
+      en maak het na.
+    </p>
+    <img src="Opdracht 7.jpg" />
+    <hr />
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo elements</title>
+    <style>
+      div div 
+      {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+        font-size: xx-large;
+        margin: 20px;
+      }
+      div div::before 
+      {
+        content: "˙";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 25px;
+        left: -20px;
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+        
+      }
+      div div ::after 
+      {
+        content: ".";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        bottom: 25px;
+        right: -20px;
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 6</h1>
+    <p>
+      Hieronder vind je wederom een voorbeeld van het gebruik van een
+      pseudo-element. Kun jij dit namaken?
+    </p>
+    <img src="Opdracht 6 voorbeeld.jpg" />
+    <hr />
+    <div>
+      <div><p>1</p></div>
+      <div><p>2</p></div>
+      <div><p>3</p></div>
+    </div>
+  </body>
+</html>

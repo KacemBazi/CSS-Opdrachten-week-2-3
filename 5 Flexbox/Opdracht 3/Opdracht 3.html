@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexboxt</title>
+    <style>
+      .container {
+        background-color: rgb(241, 250, 120);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+      .box {
+        background-color: cadetblue;
+        padding: 30px;
+        margin: 15px;
+        align-content: center;
+      }
+
+      .flex-grow {
+        background-color: cadetblue;
+        padding: 30px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 3</h1>
+    <p>
+      Zie het onderstaande voorbeeld, een van de items is breder dan de rest.
+      Maak het na met flex. Gebruik geen width, height of line-height.
+    </p>
+    <img src="Opdracht 3.jpg" />
+    <hr />
+    <container class="container">
+      <box class="box">1</box>
+      <box class="flex-grow" style="flex: 1px">2</box>
+      <box class="box">3</box>
+      <box class="box">4</box>
+      <box class="box">5</box>
+      <box class="box">6</box>
+    </container>
+  </body>
+</html>

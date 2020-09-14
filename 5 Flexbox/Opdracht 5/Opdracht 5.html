@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container1 {
+        width: 500px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        background-color: rgb(252, 200, 105);
+      }
+      .div1 {
+        background-color: lightgreen;
+        margin: 15px;
+        padding: 40px;
+      }
+
+      .container2 {
+        width: 500px;
+        height: 200px;
+        display: flex;
+        align-items: flex-end;
+        background-color: rgb(252, 200, 105);
+      }
+      .div2 {
+        background-color: lightgreen;
+        margin: 15px;
+        padding: 40px;
+      }
+
+      .container3 {
+        width: 500px;
+        height: 200px;
+        display: flex;
+        justify-content: stretch;
+        background-color: rgb(252, 200, 105);
+      }
+      .div3 {
+        background-color: lightgreen;
+        margin: 15px;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opdracht 5</h1>
+    <p>
+      De property ‘align-items’ is een property die door flex gebruikt wordt.
+      Maak verschillende voorbeelden door gebruik te maken van de align-items
+      property.
+    </p>
+    <hr />
+    <h1>align-items: center;</h1>
+    <div class="container1">
+      <div class="div1"></div>
+      <div class="div1"></div>
+      <div class="div1"></div>
+      <div class="div1"></div>
+    </div>
+    <hr />
+    <h1>align-items:flex-end;</h1>
+    <div class="container2">
+      <div class="div2"></div>
+      <div class="div2"></div>
+      <div class="div2"></div>
+      <div class="div2"></div>
+    </div>
+    <hr />
+    <h1>justify-content: stretch;</h1>
+    <div class="container3">
+      <div class="div3"></div>
+      <div class="div3"></div>
+      <div class="div3"></div>
+      <div class="div3"></div>
+    </div>
+  </body>
+</html>

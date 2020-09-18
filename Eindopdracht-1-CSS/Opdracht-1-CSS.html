@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eindopdracht 1 CSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      width: auto;
+      height: auto;
+      background-color: OliveDrab;
+      font-family: "Lobster", cursive;
+    }
+
+    nav {
+      background-color: black;
+      /* position: sticky; */
+      display: block;
+      text-align: center;
+      font-size: 30px;
+      height: 40px;
+      padding: 20px;
+      /* opacity: 0.8; */
+      border-radius: 40px;
+
+      /* transition: 1s; */
+      /* opacity: 0.5; */
+    }
+
+    nav :hover {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: OliveDrab;
+      color: GreenYellow;
+      transition: 1s;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      /* bottom: 10; */
+    }
+
+    .nav-color {
+      background-color: GreenYellow;
+      color: OliveDrab;
+      border-radius: 15px;
+      /* width: 20px; */
+      height: 20px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .div1 {
+      width: 100%;
+      height: 300px;
+      background-image: url("cooking.jpg");
+      opacity: 0.8;
+      background-size: 100% 100%;
+      border-radius: 40px;
+    }
+
+    .button1 {
+      border: none;
+      color: GreenYellow;
+      border: 2px solid GreenYellow;
+      background-color: OliveDrab;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+      align-items: center;
+      opacity: 0.8;
+      transition: 1s;
+      width: 30px;
+      height: 20px;
+    }
+
+    .button :hover {
+      background-color: rgb(228, 245, 233);
+      width: 40px;
+      height: 20px;
+      padding: 40px;
+      margin-top: 10px;
+    }
+
+    .button2 {
+      border: none;
+      color: GreenYellow;
+      border: 2px solid GreenYellow;
+      background-color: OliveDrab;
+      padding: 15px 32px;
+      text-align: center;
+      align-items: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+      align-items: center;
+      opacity: 0.8;
+      transition: 1s;
+      width: 30px;
+      height: 20px;
+    }
+
+    .text {
+      color: black;
+      width: 160px;
+      padding: 18px;
+      margin: -54px;
+      background-color: whitesmoke;
+      opacity: 0.8;
+      border-radius: 10px;
+      border: 2px solid GreenYellow;
+    }
+
+    .text-button {
+      padding-left: 100px;
+      padding-top: 100px;
+      height: 150px;
+    }
+
+    .img {
+      width: 200px;
+      border-radius: 50%;
+    }
+
+    .img2 {
+      /* width: 400px;
+        height: 700px; */
+      float: left;
+    }
+
+    .div3 {
+      /* width: 0px; */
+      display: flex;
+      justify-content: center;
+      /* align-items: flex-start; */
+    }
+
+    .div4 {
+      position: relative;
+      width: 300px;
+      height: 420px;
+      display: inline-block;
+      padding: 20px;
+      background-color: rgb(197, 52, 52);
+      border: 2px solid white;
+      border-radius: 50px;
+      /* background-color: black; */
+    }
+
+    
+    .div4 :hover {
+      background-color: white;
+      transition: 2s;
+      width: 270px;
+      /* height: 250px; */
+      padding: 10px;
+      border-radius: 10%;
+      /* margin-top: 10px; */
+    }
+
+    .text2 {
+      text-align: center;
+      color: gold;
+    }
+
+    .table {
+      position: absolute;
+      display: flex;
+      display: inline-block;
+      color: black;
+      width: 760px;
+      padding: 0px;
+      margin: 0px;
+      background-color: whitesmoke;
+      opacity: 0.8;
+      /* transition: 1s; */
+      border-radius: 10px;
+      border: 2px solid GreenYellow;
+    }
+
+    .footer {
+      position: absolute;
+      /* display: block; */
+      /* left: 0; */
+      /* bottom: 0; */
+      /* height: 100px; */
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a class="nav-color" href="/HOME/">Home</a> &nbsp &nbsp
+    <a class="nav-color" href="/MENU/">Menu</a> &nbsp &nbsp
+    <a class="nav-color" href="/CONTACT/">Contact</a>
+  </nav>
+  <div class="div1">
+    <div class="text-button">
+      <div class="text">
+        <h1><b>Cooking</b></h1>
+        <p>
+          is the art, science and craft of using heat to prepare food for
+          consumption.
+        </p>
+      </div>
+      <br />
+      <br />
+      <div class="button">
+        <div class="button1">BUY</div>
+        <div class="button2">MORE</div>
+      </div>
+
+      <div class="text2">
+        <h1>Populaire Gerechten</h1>
+      </div>
+
+      <div class="div3">
+        <div>
+          <div class="div4">
+            <img class="img" src="dish1.jpg" />
+            <p>
+              <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+              New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+              swirl van hotdog saus en knoflookolie op de rand
+            </p>
+          </div>
+          <div class="div4">
+            <img class="img" src="dish1.jpg" />
+            <p>
+              <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+              New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+              swirl van hotdog saus en knoflookolie op de rand
+            </p>
+          </div>
+          <div class="div4">
+            <img class="img" src="dish1.jpg" />
+            <p>
+              <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+              New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+              swirl van hotdog saus en knoflookolie op de rand
+            </p>
+          </div>
+        </div>
+      </div>
+      <h1>Menu</h1>
+      <table class="table">
+        <div>
+          <tr>
+            <th>
+              <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+            </th>
+            <th>
+              <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+            </th>
+            <th>
+              <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+            </th>
+          </tr>
+
+          <tr>
+            <td>
+              <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+              New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+              swirl van hotdog saus en knoflookolie op de rand
+            </td>
+        </div>
+
+        <br /><br />
+        <td>
+          <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+          New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+          swirl van hotdog saus en knoflookolie op de rand
+        </td>
+        <br /><br />
+        <td>
+          <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+          New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+          swirl van hotdog saus en knoflookolie op de rand
+        </td>
+        <br /><br />
+        </tr>
+        <tr>
+          <td>
+            <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+            New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+            swirl van hotdog saus en knoflookolie op de rand
+          </td>
+          <br /><br />
+          <td>
+            <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+            New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+            swirl van hotdog saus en knoflookolie op de rand
+          </td>
+          <br /><br />
+          <td>
+            <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+            New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+            swirl van hotdog saus en knoflookolie op de rand
+          </td>
+          <br /><br />
+        </tr>
+        <tr>
+          <td>
+            <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+            New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+            swirl van hotdog saus en knoflookolie op de rand
+          </td>
+          <br /><br />
+          <td>
+            <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+            New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+            swirl van hotdog saus en knoflookolie op de rand
+          </td>
+          <br /><br />
+          <td>
+            <b style="word-spacing: 200px">Pasta 5,00€</b><br /><br />
+            New York Hotdog pizza Tomatensaus, mozzarella, rode ui, hotdog,
+            swirl van hotdog saus en knoflookolie op de rand
+          </td>
+          <br /><br />
+        </tr>
+        <img class="img2" src="chef1.webp" />
+      </table>
+      
+                                <footer class="footer">
+      <p>Footer</p>
+      </footer>
+    </div>
+  </div>
+  
+    
+  
+</body>
+
+</html>

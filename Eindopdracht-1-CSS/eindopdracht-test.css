@@ -1,0 +1,160 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #8d93ab;
+  height: 1500px;
+  width: auto;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  background-color: #393b44;
+}
+
+nav ul {
+  /*hiermee geeft je aan dat het om de unordered list van het
+    nav blok gaat*/
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-between;
+  width: 940px;
+
+  overflow: auto;
+  /*de eigenschappen van de ul-blok*/
+  list-style: none;
+  /*hiermee verdwijnen bij de unordered list de bolletjes*/
+}
+
+nav ul li {
+  /*hiermee geeft je aan dat het om de list elementen van de
+    unordered list van het nav blok gaat*/
+  display: inline-block;
+}
+
+nav ul li a {
+  /*hiermee geeft je aan dat het om de a-elementen van de
+    list-elementen van de unordered list van het nav-blok gaat*/
+  display: block;
+  /*de a-elementen worden hier gedefinieerd als een blok en dus
+    kunnen we er blokeigenschappen aan toekennen*/
+  width: 60px;
+  height: 30px;
+
+  font-size: 14x;
+  line-height: 30px;
+  flex: 100%;
+  text-align: center;
+  margin: 5px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #8d93ab;
+  border: 2px solid white;
+  border-radius: 10%;
+}
+
+nav ul li a:hover {
+  /*:hover is een zogenaamde pseudo-klasse (pseudo-class).
+    pseudo-klassen worden gebruikt om speciale effecten
+    aan een selector toe te voegen. De :hover pseudo-klasse
+    reageert als je met de muis over dat element gaat*/
+  color: #ffffff;
+  background-color: #393b44;
+  border-radius: 10%;
+  transition: all 1s;
+}
+
+nav ul li.selected a {
+  /*hier gaat het om de geselecteerde link*/
+  color: #ffffff;
+}
+
+h1 {
+  color: white;
+  font-family: "Grandstander", cursive;
+}
+
+#h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.container.cooking {
+  max-width: auto;
+  margin: auto;
+}
+
+.cooking-img {
+  position: absolute;
+  background-color: rgb(228, 245, 233);
+  color: darkslategray;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  padding-top: 30%;
+  background: url("cooking.jpg") no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.cooking-img-button-buy {
+  margin-left: 50%;
+  margin-top: 5%;
+
+  border: none;
+  color: silver;
+  border: 2px solid silver;
+  background-color: darkslategray;
+  padding: 15px 15px;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+
+  opacity: 0.8;
+  transition: 1s;
+  width: 80px;
+  height: 50px;
+}
+
+.cooking-img-button-more {
+  margin-left: 8%;
+  border: none;
+  color: silver;
+  border: 2px solid silver;
+  background-color: darkslategray;
+  padding: 15px 15px;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+
+  opacity: 0.8;
+  transition: 1s;
+  width: 80px;
+  height: 50px;
+}
+
+#p {
+  margin-left: 50%;
+  /* display: inline-block; */
+  color: silver;
+  width: 150px;
+  height: 150px;
+  padding: 28px;
+  /* margin: 10px; */
+
+  opacity: 0.8;
+  border-radius: 10px;
+  border: 2px solid silver;
+  background-color: darkslategray;
+  text-align: center;
+}

@@ -106,18 +106,15 @@ h1 {
 .cooking-img-button-buy {
   margin-left: 50%;
   margin-top: 5%;
-
   border: none;
   color: silver;
   border: 2px solid silver;
   background-color: darkslategray;
   padding: 15px 15px;
-
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
-
   opacity: 0.8;
   transition: 1s;
   width: 80px;
@@ -131,12 +128,10 @@ h1 {
   border: 2px solid silver;
   background-color: darkslategray;
   padding: 15px 15px;
-
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
-
   opacity: 0.8;
   transition: 1s;
   width: 80px;
@@ -145,16 +140,107 @@ h1 {
 
 #p {
   margin-left: 50%;
-  /* display: inline-block; */
   color: silver;
   width: 150px;
   height: 150px;
   padding: 28px;
-  /* margin: 10px; */
-
   opacity: 0.8;
   border-radius: 10px;
   border: 2px solid silver;
   background-color: darkslategray;
   text-align: center;
 }
+
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  }
+
+.menu-box {
+  position: relative;
+  width: 275px;
+  height: 420px;
+  display: inline-block;
+  padding: 20px;
+  background-color: darkslategray;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: 10px;
+  
+}
+
+.menu-box :hover {
+  background-color: white;
+  transition: 2s;
+  width: 270px;
+  padding: 2px;
+  border-radius: 10%;
+  
+}
+
+.img-borden {
+  position: relative;
+  display: flex;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.chef-kok {
+  display: flex;
+  align-content: flex-start;
+}
+
+
+.table-p-gerechten {
+  position: relative;
+  display: flex;
+  display: inline-block;
+  color: black;
+  width: 760px;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.8;
+  border-radius: 10px;
+  border: 2px solid silver;
+}
+
+.box-p-gerechten {
+    position: relative;
+    width: 150px;
+    justify-content:center;
+    display: inline-block;
+    padding: 20px;
+    background-color: darkslategray;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin: 10px;
+  }
+  
+  .box-p-gerechten:hover {
+    position: relative;
+    background-color: white;
+    transition: 2s;
+    width: 270px;
+    padding: 2px;
+    border-radius: 10%;
+    
+    
+  }
+
+  .p-gerechten{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: space-between;
+    margin: 0%;
+    padding: 0%;
+  }
+  .footer {
+    position: absolute;
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+  }
+  
